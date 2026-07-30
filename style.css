@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-  background: #333;
+  background: blue;
   display: flex;
   justify-content: center;
 }
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #575757;
+  background: blue;
 }
 
 main {
@@ -41,7 +41,7 @@ section {
 }
 
 footer {
-  background: #4CAF50;
+  background: blue;
   color: white;
   text-align: center;
   padding: 10px;

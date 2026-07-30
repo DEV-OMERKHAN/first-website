@@ -1,12 +1,16 @@
+head {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: blue;
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f9;
+  background: blue;
   color: #333;
 }
 
 header {
-  background: #4CAF50;
+  background: black;
   color: white;
   padding: 20px;
   text-align: center;

@@ -62,7 +62,7 @@ Objects combine data (attributes) and behavior (methods) into a single unit.<br>
 <b>1. Encapsulation</b>
 Wrapping data and methods into a single unit (class).
 Protects data using access specifiers (private, public, protected).<br>
-    <pre><code>
+    <b>EXAMPLE</b><br><pre><code>
       class Student {
 private:
     int age;   // hidden data
@@ -76,11 +76,50 @@ public:
 <b>2. Abstraction</b>
 Hiding implementation details and showing only essential features.
 Achieved using abstract classes or interfaces (via pure virtual functions).<br>
+  <b>EXAMPLE</b><br>
+  <pre><code>
+    class Shape {
+public:
+    virtual void draw() = 0; // pure virtual function
+};
+
+  </code></pre>
     
 <b>3. Inheritance</b>
 Allows one class to derive properties from another.
 Promotes code reuse.<br>
-    
+  <b>EXAMPLE</b><br>
+  <pre><code>
+    class Animal {
+public:
+    void eat() { cout << "Eating..."; }
+};
+
+class Dog : public Animal {
+public:
+    void bark() { cout << "Barking..."; }
+};
+
+  </code></pre>
+   <b>4. Polymorphism</b><br>
+Same function behaves differently depending on context.
+Achieved via function overloading and function overriding. 
+      <pre><code>
+        // Overloading
+int add(int a, int b) { return a+b; }
+double add(double a, double b) { return a+b; }
+
+// Overriding
+class Base {
+public:
+    virtual void show() { cout << "Base class"; }
+};
+class Derived : public Base {
+public:
+    void show() override { cout << "Derived class"; }
+};
+
+      </code></pre>
   </p>
   
 </body>
